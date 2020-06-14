@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jmwhite</title>
+		<link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+
+<style>
+
+.flexright{
+
+  display: flex;
+	justify-content: center;
+
+}
+
+/*.has-bg-img { background: url('/images/ladakh1.jpg')center center; background-size:cover; }
+*/
+</style>
+
+
+  </head>
+
+	<body>
+		<nav class="navbar is-fixed-top">
+      <div class="navbar-brand">
+            <div class="navbar-item">
+              <h1 class="is-size-3"> <strong>Joshua White </strong> </h1>
+            </div>
+          <a class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+        <a class="navbar-item flexright" href="#Home"> Home  </a>
+				<a class="navbar-item flexright" href="#Projects"> Projects  </a>
+	      <a class="navbar-item flexright" href="#About"> About </a>
+        <a class="navbar-item flexright" href="#Resume"> Resume </a>
+        </div>
+        <div class="navbar-end">
+        </div>
+			</div>
+		</nav>
+
+<section class="hero is-large has-bg-img has-background"
+style="background:url('images/ladakh2.jpg') center / cover;"
+id="Home">
+  <div class="hero-body">
+      <div class="container" style="color:white;">
+
+      <h1 class="title" style="color:white;">
+        Hi, I'm Josh
+      </h1>
+      <h2 class="subtitle" style="color:white;">
+        I'm an engineering student looking to make a difference
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="Projects">
+	<h1 class="title" style="display: flex;
+		justify-content: center;">
+		Projects
+	</h1>
+	<h2 class="subtitle" style="display: flex;
+		justify-content: center;">
+		Personal, school and other miscellaneous projects!
+	</h2>
+	<div class="container">
+		<div class = "columns">
+
+			<div class = "column">
+				<div class = "notification">
+					<p class="is-size-5" style="text-align: center;">
+					Projects Coming Soon!
+				</p>
+				</div>
+			</div>
+
+			<div class = "column">
+				<div class = "notification">
+					<p class="is-size-5" style="text-align: center;">
+					Projects Coming Soon!
+				</p>
+				</div>
+			</div>
+
+			<div class = "column">
+				<div class = "notification">
+					<p class="is-size-5" style="text-align: center;">
+					Projects Coming Soon!
+				</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section class = "hero" id="About">
+	<div class="hero-body">
+
+		<h1 class="title" style="display: flex;
+			justify-content: center;">
+			About Me
+		</h1>
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-128x128">
+      <img src="images/headshot1.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Joshua White</strong> <br>
+					I'm  currently an Engineering Physics Student at the University of British Columbia.
+					In my spare time, I enjoy traveling, endurance sports, and occasionally taking photos.
+					If the future holds math, technology, science and engineering, I will be happy.
+
+			</p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          </a>
+      </div>
+    </nav>
+  </div>
+  <div class="media-right">
+  </div>
+</article>
+</div>
+</section>
+
+<section class="section" id="Resume">
+	<h1 class="title" style="display: flex;
+		justify-content: center;">
+		Resume
+	</h1>
+	<a class="button is-info is-large"style="display: flex;
+		justify-content: center;">
+		Click here for a PDF of my Resume!
+	</a>
+
+</section>
+
+
+	</body>
+</html>
